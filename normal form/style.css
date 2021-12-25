@@ -4,11 +4,12 @@
     padding-bottom: 30px;
     border: 1px solid greenyellow;
     border-radius: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     /* margin-left: 100px; */ 
     color:aliceblue;
     font-weight:800;
     background-color: greenyellow;
+    box-shadow: .1em .4em .01em green;
 }
 #main_body{
     border: 1px  ;
@@ -18,6 +19,8 @@
     margin-right: 250px;
     background-color: wheat;
     font-size: large;
+    box-shadow: .4em .4em 2em grey;
+    box-sizing:content-box;
 }
 input[type="text"]{
     margin-left:20px;
@@ -33,5 +36,106 @@ input,span{
     margin-left: 10px;
 }
 span{
-    margin-top: 50px;
+    margin-top: 10px;
 }
+
+@media screen and (min-width: 1008px) {
+     span,input,#form_heading{
+      size:100%;
+      font-size: 30px;
+      /* color: blue; */
+  }
+  span,input{margin-bottom: 10px;
+        font-size: 20px;
+    }
+    #main_body{
+        /* height: 800px;
+        width:600px; */
+        /* border-width: 600px;
+        border-collapse: unset; */
+        margin-top: 0px;
+        margin-left: 10%;
+        margin-right: 10%;
+        
+        
+    }
+  }
+  @media screen and (max-width: 1007px)  and (min-width:880px){
+    span,input#form_heading{
+      /* width: 500px; */
+      size: 50%;
+      /* height: 50%; */
+      font-size: 22px;
+      /* color: purple; */
+      /* border: 1px solid white;
+      padding-top:15px;  */
+  
+    }
+    span,input{margin-bottom: 5px;
+        font-size: 15px;
+    }
+    #main_body{
+        /* height: 800px;
+        width:600px; */
+        /* border-width: 600px;
+        border-collapse: unset; */
+        margin-top: 0px;
+        margin-left: 10%;
+        margin-right: 10%;
+        
+        
+    }
+  }
+  @media screen and (max-width:879px) and (min-width:501px) {
+    span,input#form_heading{
+        /* width: 500px; */
+        /* size: 100px; */
+        /* height: 50%; */
+        font-size: 22px;
+        /* color: red; */
+        /* border: 1px solid white;
+        padding-top:15px;  */
+    
+      }
+      #main_body{
+          /* height: 800px;
+          width:600px; */
+          /* border-width: 600px;
+          border-collapse: unset; */
+          margin-top: 0px;
+          margin-left: 10%;
+          margin-right: 10%;
+          
+          
+      }
+      span,input{margin-bottom: 5px;
+          font-size: 15px;
+      }
+  }
+  @media screen and (max-width:500px){
+    span,input#form_heading{
+        /* width: 500px; */
+        /* size: 100px; */
+        /* height: 50%; */
+        font-size: 22px;
+        /* border: 1px solid white;
+        padding-top:15px;  */
+    
+      }
+      #main_body{
+          /* height: 800px;
+          width:600px; */
+          /* border-width: 600px;
+          border-collapse: unset; */
+          margin-top: 0px;
+          margin-left: 10%;
+          margin-right: 10%;
+          
+          
+      }
+      span,input{margin-bottom: 5px;
+          font-size: 15px;
+      }
+  }
+
+  
