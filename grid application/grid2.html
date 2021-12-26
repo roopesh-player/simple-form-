@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid placement</title>
+    <style>   
+        *{margin: 0;}           
+        .containers{
+        display:grid;
+        grid-gap:5px;
+        /*   grid-template-columns:repeat(auto-fill,minmax(200px,auto)); */
+        /*   grid-auto-rows:200px; */
+        }
+        .items{
+        background-color:gold;
+        border:1px solid gold;
+        /* border-radius:10px; */
+        padding:5px;
+        }
+        .items:hover{
+        background-color:goldenrod;
+        border:1px solid gold;
+        border-radius:10px;
+        padding:5px;
+        cursor:pointer;
+        cursor:white;
+        margin:5px;
+        }
+        #nav{
+        grid-column-start:1;
+        grid-column-end:3;
+        grid-row-start:1;
+        grid-row-end:100;
+        }
+        #header{
+        grid-column-start:3;
+        grid-column-end:10;
+        grid-row-start:1;
+        grid-row-end:20;
+        }
+        #ads{
+        grid-column-start:8;
+        grid-column-end:10;
+        grid-row-start:20;
+        grid-row-end:80;
+        }
+        #article{
+        grid-column-start:3;
+        grid-column-end:8;
+        grid-row-start:20;
+        grid-row-end:80;
+        }
+        #footer{
+        grid-column-start:3;
+        grid-column-end:10;
+        grid-row-start:80;
+        grid-row-end:100;
+        }
+    </style>
+</head>
+<body>
+    <div class="containers">
+        <div class="items" id="nav">Nav</div>
+        <div class="items" id="header">header</div>
+        <div class="items" id="article">Article</div>
+        <div class="items" id="ads">Ads</div>
+        <div class="items" id="footer">Footer</div>
+        </div>
+</body>
+</html>
